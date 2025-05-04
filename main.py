@@ -12,7 +12,7 @@ def main():
 	num_words = get_num_words(file_contents.split())
 	print(f'{num_words} words found in the document')
 	char_dict = get_num_characters(file_contents)
-        for key,value in char_dict.items():
+	for key, value in char_dict.items():
 		print(f'{key}:{value}')
 
 
