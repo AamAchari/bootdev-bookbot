@@ -20,7 +20,7 @@ def main():
 	print("----------- Word Count ----------")
 	print(f'{num_words} words found in the document')
 	print("--------- Character Count -------")
-        for l in sorted_list:
+	for l in sorted_list:
 		key, value = l.items()
 		print(f'{key[1]}: {value[1]}')
 
