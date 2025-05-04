@@ -18,10 +18,11 @@ def main():
 	print("============ BOOKBOT ============")
 	print("Analyzing book found at books/frankenstein.txt...")
 	print("----------- Word Count ----------")
-	print(f'{num_words} words found in the document')
-	print("--------- Character Count -------")
+	print(f'Found {num_words} total words ')
 	for l in sorted_list:
 		key, value = l.items()
+		if not key[1].isalpha():
+			continue
 		print(f'{key[1]}: {value[1]}')
 
 if __name__ == '__main__':
